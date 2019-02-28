@@ -13,3 +13,7 @@ const store = (function () {
             items,
         };
 }());
+const findAndToggleChecked = function (id) {
+    const idFound = this.findById(id);
+    idFound.checked = !idFound.checked;
+};
